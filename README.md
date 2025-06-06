@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Jesse-ek/Newsletter.git)
+- Live Site URL: [Add live site URL here](https://newsletter-phi-three.vercel.app/)
 
 ## My process
 
@@ -84,7 +84,7 @@ position with CSS
 ## Author
 
 - Website - [Jesse david](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.https://www.frontendmentor.io/profile/Jesse-ek)
 - Twitter - [@davidweb3__](https://x.com/davidweb3__/)
 
 

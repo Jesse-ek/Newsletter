@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: hsl(235, 18%, 26%);
+    height: 100vh;
+}
+
+
+.main-body {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+  height: 100vh;
+
+}
+
+.form-section{
+  display: flex;
+  background: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border: 10px ;
+  padding: 20px;
+}
+
+.text-form {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+  margin: 50px 0 20px 0;
+  text-align: left;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 1.5;
+  color: hsl(234, 29%, 20%);
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+ul {
+  list-style: url('assets/images/icon-list.svg');
+  padding: 0;
+  margin: 0 0 20px 30px;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 450;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+  padding-left: 10px; /* Space for the bullet */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+
+.label-row {
+  display: flex;
+  justify-content: space-between; /* Aligns label to left, optional text to right */
+  align-items: center; /* Vertically centers both elements */
+  margin-bottom: 5px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(234, 29%, 20%);
+  text-align: left;
+}
+
+.error-message {
+  font-size: 13px;
+  font-weight: 500;
+  color: hsl(4, 100%, 67%);
+
+}
+
+
+
+input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid rgba(0, 0, 0, 0.327);
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+
+
+input::placeholder {
+  color: hsl(0, 0%,58%);
+}
+
+
+.btn {
+  width: 100%;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 15px;
+  background: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.2s;
+}
+
+.btn:hover {
+  background: linear-gradient(to top left, #f05806e1 0%, #f80303  100%);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+input:hover {
+  border: 1px solid black
+}
+
+.btn:active {
+  transform: translate(-2%, 1px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.succes-message {
+  background: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  padding: 40px 60px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; 
+}
+
+
+.succes-message img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.succes-message h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.succes-message p {
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 1.5;
+  color: hsl(234, 29%, 20%);
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+
+
+#dismiss-button {
+  width: 100%;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 15px;
+  background: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.2s;
+}
+
+#dismiss-button:hover {
+  background: linear-gradient(to top left, #f05806e1 0%, #f80303  100%);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+
+#dismiss-button:active {
+  transform: translate(-2%, 1px);
+}
+
+
+.hidden{
+  display: none !important;
+}
+
+
+picture img {
+  width: 300px;
+  height: 100%;
+}
+
+.form-section.hidden + .succes-message {
+  display: flex; /* Ensure success message is visible when form is hidden */
+}
+
+@media(max-width: 768px) {
+  .form-section {
+    display: flex;
+    flex-direction:column-reverse;
+    padding: 0;
+  }
+
+  .main-body {
+    align-items: flex-start;
+  }
+
+  picture img {
+    width: 100%; /* Adjust width for mobile */
+    height: 100%;
+    object-fit: cover; /* Ensures the image scales nicely without stretching */
+    border-radius: 12px;
+  }
+
+  .succes-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+    padding: 40px 20px;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .succes-message h1 {
+    font-size: 40px;
+    font-weight:700;
+  }
+
+  .succes-message p {
+    font-size: 16px;
+  }
+
+}
